@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce with IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+    <style>
+  /* Updated Styles for Enhanced Professional Look */
+         
+ header {
+            background:#f355f8;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        .menu-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-icons li {
+    margin: 10px 0;
+}
+
+.menu-icons li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icons li a i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #eaedf0; /* Icon color */
+    transition: color 0.3s;
+}
+
+.menu-icons li a:hover i {
+    color: #e2e5e7; /* Hover effect for icons */
+}
+
+
+        .navbar {
+            background-color: #96078f;
+            color: #ffffff;
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            color: #f3faf6;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+		.scroll-text-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f355f8;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+        .navbar ul li a:hover {
+            background-color: #ee75de;
+            color: #ffffff;
+        }
+
+        .toggle-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        /* General Styling for the Home Section */
+#home-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Style */
+#home-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Style */
+#home-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Video Element Styling */
+#home-section video {
+    align-items: end;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home-section {
+        padding: 15px;
+    }
+
+    #home-section h2 {
+        font-size: 1.8rem;
+    }
+
+    #home-section p {
+        font-size: 1rem;
+    }
+}
+
+
+
+         
+        main {
+    
+            background: #f8f9fa;
+            color: #333;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* General styling for the faculties section */
+        .faculty-card {
+        background: url('logo.png') no-repeat center center;
+        background-size: contain; /* Adjust size to fit */
+        padding: 20px;
+        border-radius: 10px;
+     position: relative; /* Ensures child elements stay positioned */
+}
+        .faculty-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .faculty {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .faculty img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .faculty p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #eb0c0c;
+        }
+
+        /* Hover effect for faculty cards */
+        .faculty:hover {
+            background-color: #eb8fe3;
+            color: rgb(245, 234, 234);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .faculty-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .faculty {
+                width: 80%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .faculty {
+                width: 250px;
+            }
+        }
+		/* Placed Students Section */
+.placed-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.placed:hover {
+    background-color: #eb8fe3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placed img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.placed h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.placed p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.placed button {
+    background-color: #50c878;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.placed button:hover {
+    background-color: #50c878;
+}
+
+/* Hover effect for placed student cards */
+.placed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Achievements Section */
+.achievement-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.achievement:hover {
+    background-color:#eb8fe3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.achievement img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.achievement h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.achievement p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.achievement button {
+    background-color: #50c878;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.achievement button:hover {
+    background-color: #45b36b;
+}
+
+/* Hover effect for achievement cards */
+.achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+        .faculty-card,
+        .achievement-card,
+        .placed-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .faculty,
+        .achievement,
+        .placed {
+            background-color: rgb(255, 254, 254);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .faculty img,
+        .achievement img,
+        .placed img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .faculty h3,
+        .achievement h3,
+        .placed h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .faculty p,
+        .achievement p,
+        .placed p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .faculty button,
+        .achievement button,
+        .placed button {
+            background-color: #50c878;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .faculty button:hover,
+        .achievement button:hover,
+        .placed button:hover {
+            background-color: #45b36b;
+        }
+        #content p {
+    text-align: justify; /* Justify text for a neat appearance */
+    line-height: 1.8;
+    line-gap-override: 1.5; /* Improve readability with appropriate line height */
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #f355f8; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add spacing inside the footer */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 20px; /* Add space between content and footer */
+}
+
+
+
+        .ai-assistant {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #df54f1;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .ai-assistant:hover {
+            background-color: #df54f1;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+                background-color: #203a43;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .navbar ul.show {
+                display: flex;
+            }
+
+            .toggle-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COMMERCE WITH INFORMATION & TECHNOLOGY</h1>
+        <p>YOUR JOURNEY TO EXCELLENCE STARTS HERE</p>
+		<div class="scroll-text-container">
+    <div class="scroll-text">
+        SRI RAMAKRISHNA COLLEGE OF ARTS AND SCIENCE (AUTONOMOUS)
+    </div>
+    
+    
+    
+</div>
+
+    </header>
+     
+    <nav class="navbar">
+        <button class="toggle-menu">&#9776;</button>
+        <ul class="menu-icons">
+            <li><a href="#" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" data-page="about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#" data-page="faculties"><i class="fas fa-users"></i> Faculties</a></li>
+            <li><a href="#" data-page="achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a href="#" data-page="placed-students"><i class="fas fa-user-graduate"></i> Placed Students</a></li>
+            <li><a href="#" data-page="exam-results"><i class="fas fa-file-alt"></i> Exam Results</a></li>
+            <li><a href="#" data-page="fest-cultural"><i class="fas fa-music"></i> Fest & Cultural Activities</a></li>
+        </ul>
+        <a href="http://localhost/info/login.php" class="student-profile-button" style="position: absolute; top: 10px; right: 10px; background-color: #c208a9; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Student Profile</a>
+</nav>
+    </nav>
+  
+
+    <main id="content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <button class="ai-assistant" id="ai-assistant">💬</button>
+
+    <script>
+        // AI Assistant Enhanced Feature
+        document.getElementById('ai-assistant').addEventListener('click', () => {
+            const userInput = prompt('Hello! I am your virtual assistant. How can I help you today?');
+            if (userInput) {
+                alert(`You asked: ${userInput}. We will assist you shortly!`);
+            } else {
+                alert('Feel free to ask anything anytime!');
+            }
+        });
+
+        // Navigation Toggle Enhancement
+        document.querySelector('.toggle-menu').addEventListener('click', () => {
+            document.querySelector('.navbar ul').classList.toggle('show');
+        });
+
+        // Page Loading Functionality
+        const contentDiv = document.getElementById('content');
+        const links = document.querySelectorAll('.navbar ul li a');
+
+        const pages = {
+            home: '<div id="home-section"><h2>WELCOME TO </h2><img src="logo.png"></div>',
+            about: '<h2>About Us</h2><p>The Department of Commerce with Information Technology commenced in the Academic Year 2018–19. This programme is designed to provide a wide range of knowledge and skills in the field of Commerce and Information Technology. It covers different core areas of commerce such as Business Management, Finance, Fundamentals of Law, Accounting, Marketing, along with Information Technology. It enables the students to understand and demonstrate the concepts, techniques, and trends in functional areas of business and be able to face the challenges in the competitive world. This programme is implementing Outcome-Based Education with a Choice-Based Credit System. This ensures that the outcome of each course is defined at the beginning of the programme and matched with the real outcome of the students after the completion of the course. It also defines the professional competency of the graduates in the next five years after the completion of the programme. This programme is enriched with evolving and dynamic syllabi, pedagogy, interactive lectures, assignments, and activities to ensure that all students have achieved specified outcomes.</p><h2>VISION</h2><p>To impart knowledge and to make the students technically excellent in the field of commerce</p><h2>MISSION</h2><p>To provide value-based education leading to holistic development integrating commerce and information technology to face the global challenges</p><h2>PROGRAMMES OFFERED BY THE DEPARTMENT</h2><p>B.Com Information Technology</p>',
+            faculties: `
+                <h2>Our Faculties</h2>
+                <div class="faculty-card">
+                    <div class="faculty">
+                     <img src="HOD IT.jpg">
+                     <h3>Dr. D. Sasikaladevi </h3>
+                     <h3>M.Com, MBA, M.Phil, Ph.D, NET</h3>
+                     <p>Head of Department, Commerce & IT</p>
+                     <a href="https://srcas.irins.org/profile/183970#personal_information_panel" target="_blank"><button>View</button></a>
+                   </div>
+                    <div class="faculty">
+                        <img src="tutor it.jpg">
+                        <h3>Dr.PriyanakaJeyeraj </h3>
+                         <h3>M.Com,M.Phil.,PGDCA.,Ph.D,</h3>
+                        <p>Assistant Professor</p>
+                        <a href="https://srcas.irins.org/profile/263938" target="_blank"><button>View</button></a>
+                    </div>
+                    <div class="faculty">
+                        <img src="tu2.jpg" alt="Prof. Emily Johnson">
+                        <h3>Dr.H.Punithavathy </h3>
+                        <h3>M.Com. B.Ed.,PGDCA., Ph.D</h3>
+                        <p>Assistant Professor</p>
+                        <a href="https://srcas.irins.org/profile/230972" target="_blank"><button>View</button></a>
+                    </div>
+                    <div class="faculty">
+                        <img src="tu3.jpg" alt="Prof. Emily Johnson">
+                        <h3>Dr. U.Praveen</h3>
+                        <h3> M.Com(FCA)..M.Phil PGDSPM</h3>
+                        <p>Assistant Professor</p>
+                        <a href="https://srcas.irins.org/profile/177988" target="_blank"><button>View</button></a>
+                    </div>
+                </div>
+            `,
+            achievements: `
+                <h2>Achievements</h2>
+                <div class="achievement-card">
+                    <div class="achievement">
+                        <img src="award1.jpg" alt="Award 1">
+                        <h3>National IT Excellence Award</h3>
+                        <p>Recognized for outstanding contributions to the field of IT.</p>
+                        <button onclick="loadUserInfoPage('National IT Excellence Award')">View</button>
+                    </div>
+                    <div class="achievement">
+                        <img src="award2.jpg" alt="Award 2">
+                        <h3>Best Academic Institution 2023</h3>
+                        <p>Honored for academic excellence and student success.</p>
+                        <button onclick="loadUserInfoPage('Best Academic Institution 2023')">View</button>
+                    </div>
+                </div>
+            `,
+            'placed-students': `
+                <h2>Placed Students</h2>
+                <div class="placed-card">
+                    <div class="placed">
+                        <img src="student1.jpg" alt="Student 1">
+                        <h3>John Smith</h3>
+                        <p>Company: TechCorp<br>Salary Package: $120,000/year</p>
+                        <button onclick="loadUserInfoPage('John Smith')">View</button>
+                    </div>
+                    <div class="placed">
+                        <img src="student2.jpg" alt="Student 2">
+                        <h3>Jane Doe</h3>
+                        <p>Company: FinServe<br>Salary Package: $100,000/year</p>
+                        <button onclick="loadUserInfoPage('Jane Doe')">View</button>
+                    </div>
+                </div>
+            `,
+            'exam-results': `
+                <h2>Exam Results</h2>
+                <p>Check your exam results below:</p>
+                <button onclick="window.location.href='http://localhost/osrs/login.php';" style="background-color: #50c878; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">View Results</button>
+            `,
+            'fest-cultural': '<h2>Fest and Cultural Activities</h2><p>Join our vibrant community events.</p>'
+        };
+        
+        function viewWebPage(url) {
+        // Open the webpage in a new tab
+        window.open(url, '_blank');
+    }
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+                const page = event.target.dataset.page;
+                contentDiv.innerHTML = pages[page] || '<p>Page not found.</p>';
+            });
+        });
+		 // Function to load user info page
+        function loadUserInfoPage(userInfo) {
+            contentDiv.innerHTML = `<h2>User Information</h2><p>Details about ${userInfo}.</p>`;
+        }
+
+        // Initial Page Load
+        contentDiv.innerHTML = pages.home;
+    </script>
+   
+</body>
+<footer>
+    <p>&copy; 2024 Commerce with IT. All rights reserved.</p>
+</footer>
+
+</html>
